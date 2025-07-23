@@ -24,7 +24,6 @@ function export_fruits ($number){
         }else{
             echo "指定した数量が在庫数を超えています。\n";
         }
-        echo "すべての出荷が完了しました。\n";
     }else{
         echo "エラー：整数の値を入力してください。\n";
     }
