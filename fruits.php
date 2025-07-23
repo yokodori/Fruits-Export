@@ -11,6 +11,13 @@ function export_fruits ($number){
             echo "{$fruits[$i]}を出荷！\n";
         }
         echo "すべての出荷が完了しました。\n";
+        $count = count($fruits);
+        if ($count === 0){
+            echo "これで在庫はもうありません。";
+        }else{
+            echo "残りの在庫状況は以下のとおりです。";
+            var_export($fruits);
+        }
     }else{
         echo "指定した数量が在庫数を超えています。\n";
     }
